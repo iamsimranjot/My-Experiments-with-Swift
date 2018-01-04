@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PicturesTableViewController.swift
 //  Storm Viewer
 //
 //  Created by SimranJot Singh on 04/01/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PicturesTableViewController: UITableViewController {
     
     var pictures = [String]()
 
