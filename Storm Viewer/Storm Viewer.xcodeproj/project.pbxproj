@@ -22,6 +22,7 @@
 		705090B21FFE8E0E00BF7B4B /* nssl0049.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 705090A81FFE8E0E00BF7B4B /* nssl0049.jpg */; };
 		705090B31FFE8E0E00BF7B4B /* nssl0051.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 705090A91FFE8E0E00BF7B4B /* nssl0051.jpg */; };
 		705090B41FFE8E0E00BF7B4B /* nssl0091.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 705090AA1FFE8E0E00BF7B4B /* nssl0091.jpg */; };
+		705090B61FFE9A1200BF7B4B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705090B51FFE9A1200BF7B4B /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		705090A81FFE8E0E00BF7B4B /* nssl0049.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0049.jpg; sourceTree = "<group>"; };
 		705090A91FFE8E0E00BF7B4B /* nssl0051.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0051.jpg; sourceTree = "<group>"; };
 		705090AA1FFE8E0E00BF7B4B /* nssl0091.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0091.jpg; sourceTree = "<group>"; };
+		705090B51FFE9A1200BF7B4B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			children = (
 				7050908C1FFE8CFF00BF7B4B /* AppDelegate.swift */,
 				7050908E1FFE8CFF00BF7B4B /* PicturesTableViewController.swift */,
+				705090B51FFE9A1200BF7B4B /* DetailViewController.swift */,
 				705090901FFE8CFF00BF7B4B /* Main.storyboard */,
 				7050909F1FFE8DF100BF7B4B /* Resources */,
 				7050909E1FFE8DCB00BF7B4B /* Suppporting Files */,
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				705090B61FFE9A1200BF7B4B /* DetailViewController.swift in Sources */,
 				7050908F1FFE8CFF00BF7B4B /* PicturesTableViewController.swift in Sources */,
 				7050908D1FFE8CFF00BF7B4B /* AppDelegate.swift in Sources */,
 			);
