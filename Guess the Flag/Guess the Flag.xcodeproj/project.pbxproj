@@ -57,11 +57,27 @@
 				700AEC4420000E0A00F7DDE1 /* AppDelegate.swift */,
 				700AEC4620000E0A00F7DDE1 /* ViewController.swift */,
 				700AEC4820000E0A00F7DDE1 /* Main.storyboard */,
-				700AEC4B20000E0A00F7DDE1 /* Assets.xcassets */,
+				700AEC5720000E5700F7DDE1 /* Resources */,
+				700AEC5620000E4A00F7DDE1 /* Supporting Files */,
+			);
+			path = "Guess the Flag";
+			sourceTree = "<group>";
+		};
+		700AEC5620000E4A00F7DDE1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				700AEC4D20000E0A00F7DDE1 /* LaunchScreen.storyboard */,
 				700AEC5020000E0A00F7DDE1 /* Info.plist */,
 			);
-			path = "Guess the Flag";
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		700AEC5720000E5700F7DDE1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				700AEC4B20000E0A00F7DDE1 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,7 +292,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8MH4723CB5;
-				INFOPLIST_FILE = "Guess the Flag/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Guess the Flag/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.simranjot.Guess-the-Flag";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,7 +307,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8MH4723CB5;
-				INFOPLIST_FILE = "Guess the Flag/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Guess the Flag/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.simranjot.Guess-the-Flag";
 				PRODUCT_NAME = "$(TARGET_NAME)";
