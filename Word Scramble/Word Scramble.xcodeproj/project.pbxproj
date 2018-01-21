@@ -12,6 +12,7 @@
 		703A5A112014B4FF00654F78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 703A5A0F2014B4FF00654F78 /* Main.storyboard */; };
 		703A5A132014B4FF00654F78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 703A5A122014B4FF00654F78 /* Assets.xcassets */; };
 		703A5A162014B4FF00654F78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 703A5A142014B4FF00654F78 /* LaunchScreen.storyboard */; };
+		703A5A202014B68300654F78 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 703A5A1F2014B68300654F78 /* start.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		703A5A122014B4FF00654F78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		703A5A152014B4FF00654F78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		703A5A172014B4FF00654F78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		703A5A1F2014B68300654F78 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +59,28 @@
 				703A5A0B2014B4FF00654F78 /* AppDelegate.swift */,
 				703A5A0D2014B4FF00654F78 /* ViewController.swift */,
 				703A5A0F2014B4FF00654F78 /* Main.storyboard */,
-				703A5A122014B4FF00654F78 /* Assets.xcassets */,
-				703A5A142014B4FF00654F78 /* LaunchScreen.storyboard */,
-				703A5A172014B4FF00654F78 /* Info.plist */,
+				703A5A1D2014B65400654F78 /* Resources */,
+				703A5A1E2014B65F00654F78 /* Supporting Files */,
 			);
 			path = "Word Scramble";
+			sourceTree = "<group>";
+		};
+		703A5A1D2014B65400654F78 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				703A5A122014B4FF00654F78 /* Assets.xcassets */,
+				703A5A142014B4FF00654F78 /* LaunchScreen.storyboard */,
+				703A5A1F2014B68300654F78 /* start.txt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		703A5A1E2014B65F00654F78 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				703A5A172014B4FF00654F78 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				703A5A162014B4FF00654F78 /* LaunchScreen.storyboard in Resources */,
+				703A5A202014B68300654F78 /* start.txt in Resources */,
 				703A5A132014B4FF00654F78 /* Assets.xcassets in Resources */,
 				703A5A112014B4FF00654F78 /* Main.storyboard in Resources */,
 			);
