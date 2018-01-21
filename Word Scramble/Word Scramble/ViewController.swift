@@ -7,12 +7,44 @@
 //
 
 import UIKit
+import GameplayKit
+
+var allWords = [String]()
+var usedWords = [String]()
 
 class ViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        loadWordsFromResource()
+        startGame()
+    }
+    
+    func startGame() {
+        
+        allWords = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: allWords) as? [String] ?? [String]()
+        title = allWords[0]
+        
+        usedWords.removeAll(keepingCapacity: true)
+        tableView.reloadData()
+    }
+    
+    func loadWordsFromResource(){
+        
+        if let resourcePath = Bundle.main.path(forResource: "start", ofType: "txt") {
+            
+            let words: String
+            
+            do {
+                words = try String(contentsOfFile: resourcePath)
+                allWords = words.components(separatedBy: "\n")
+                
+            } catch let error as NSError {
+                print(error)
+                allWords = ["silkworm"]
+            }
+        }
     }
 }
 
