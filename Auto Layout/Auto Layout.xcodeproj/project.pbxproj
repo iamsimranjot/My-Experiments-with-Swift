@@ -57,11 +57,27 @@
 				705022EC2019199F00F27E60 /* AppDelegate.swift */,
 				705022EE201919A000F27E60 /* ViewController.swift */,
 				705022F0201919A000F27E60 /* Main.storyboard */,
-				705022F3201919A000F27E60 /* Assets.xcassets */,
-				705022F5201919A000F27E60 /* LaunchScreen.storyboard */,
-				705022F8201919A000F27E60 /* Info.plist */,
+				705022FE20191AB000F27E60 /* Resources */,
+				705022FF20191AC000F27E60 /* Supporting Files */,
 			);
 			path = "Auto Layout";
+			sourceTree = "<group>";
+		};
+		705022FE20191AB000F27E60 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				705022F3201919A000F27E60 /* Assets.xcassets */,
+				705022F5201919A000F27E60 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		705022FF20191AC000F27E60 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				705022F8201919A000F27E60 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
