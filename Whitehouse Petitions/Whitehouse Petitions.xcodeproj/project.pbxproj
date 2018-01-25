@@ -13,6 +13,7 @@
 		70AFAE2A201A4D0F00C28F68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70AFAE29201A4D0F00C28F68 /* Assets.xcassets */; };
 		70AFAE2D201A4D0F00C28F68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70AFAE2B201A4D0F00C28F68 /* LaunchScreen.storyboard */; };
 		70AFAE38201A50E800C28F68 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AFAE37201A50E800C28F68 /* SwiftyJSON.swift */; };
+		70AFAE3A201A567300C28F68 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AFAE39201A567300C28F68 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		70AFAE2C201A4D0F00C28F68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70AFAE2E201A4D0F00C28F68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70AFAE37201A50E800C28F68 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		70AFAE39201A567300C28F68 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				70AFAE22201A4D0F00C28F68 /* AppDelegate.swift */,
 				70AFAE24201A4D0F00C28F68 /* ViewController.swift */,
+				70AFAE39201A567300C28F68 /* DetailViewController.swift */,
 				70AFAE26201A4D0F00C28F68 /* Main.storyboard */,
 				70AFAE36201A50D200C28F68 /* Helpers */,
 				70AFAE35201A4DDB00C28F68 /* Resources */,
@@ -166,6 +169,7 @@
 				70AFAE38201A50E800C28F68 /* SwiftyJSON.swift in Sources */,
 				70AFAE25201A4D0F00C28F68 /* ViewController.swift in Sources */,
 				70AFAE23201A4D0F00C28F68 /* AppDelegate.swift in Sources */,
+				70AFAE3A201A567300C28F68 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
