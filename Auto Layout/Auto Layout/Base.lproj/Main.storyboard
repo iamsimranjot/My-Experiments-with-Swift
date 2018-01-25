@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wi3-y4-1Fr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wi3-y4-1Fr">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,16 +14,15 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Guess_the_Flag" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Auto_Layout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHb-Ra-UCg">
-                                <rect key="frame" x="87" y="164" width="200" height="100"/>
+                                <rect key="frame" x="87.5" y="100" width="200" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="oEk-wt-oTD"/>
-                                    <constraint firstAttribute="width" constant="200" id="uKb-j1-M7A"/>
+                                    <constraint firstAttribute="width" secondItem="OHb-Ra-UCg" secondAttribute="height" multiplier="2:1" id="cHQ-Vj-1FB"/>
                                 </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
@@ -30,10 +30,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwg-8p-yGg">
-                                <rect key="frame" x="87" y="294" width="200" height="100"/>
+                                <rect key="frame" x="87.5" y="230" width="200" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="eYJ-yP-0Uz"/>
-                                    <constraint firstAttribute="width" constant="200" id="yOl-Na-9vb"/>
+                                    <constraint firstAttribute="width" secondItem="bwg-8p-yGg" secondAttribute="height" multiplier="2:1" id="rwb-8d-eeQ"/>
                                 </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
@@ -41,10 +40,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UL3-s9-b0b">
-                                <rect key="frame" x="87.5" y="424" width="200" height="100"/>
+                                <rect key="frame" x="87.5" y="360" width="200" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="9mX-EP-GB1"/>
-                                    <constraint firstAttribute="height" constant="100" id="FLN-nJ-bmM"/>
+                                    <constraint firstAttribute="width" secondItem="UL3-s9-b0b" secondAttribute="height" multiplier="2:1" id="GHN-ey-mq6"/>
                                 </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
@@ -56,9 +54,12 @@
                         <constraints>
                             <constraint firstItem="OHb-Ra-UCg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8ED-Ba-2RN"/>
                             <constraint firstItem="UL3-s9-b0b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Att-5Y-sEt"/>
-                            <constraint firstItem="OHb-Ra-UCg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="BE6-dG-cMs"/>
+                            <constraint firstItem="OHb-Ra-UCg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="BE6-dG-cMs"/>
                             <constraint firstItem="bwg-8p-yGg" firstAttribute="top" secondItem="OHb-Ra-UCg" secondAttribute="bottom" constant="30" id="J88-Eh-BJe"/>
                             <constraint firstItem="bwg-8p-yGg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RWD-ps-9Ip"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="UL3-s9-b0b" secondAttribute="bottom" constant="20" id="V6b-Ij-kFq"/>
+                            <constraint firstItem="bwg-8p-yGg" firstAttribute="height" secondItem="OHb-Ra-UCg" secondAttribute="height" id="aus-DL-9G3"/>
+                            <constraint firstItem="UL3-s9-b0b" firstAttribute="height" secondItem="bwg-8p-yGg" secondAttribute="height" id="vFy-Fh-H53"/>
                             <constraint firstItem="UL3-s9-b0b" firstAttribute="top" secondItem="bwg-8p-yGg" secondAttribute="bottom" constant="30" id="yLG-MV-VgJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
