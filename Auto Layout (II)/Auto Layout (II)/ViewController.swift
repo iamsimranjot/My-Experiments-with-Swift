@@ -44,13 +44,34 @@ class ViewController: UIViewController {
         view.addSubview(label4)
         view.addSubview(label5)
         
+        // Visual Format Language
+        
         let viewsDictionary = ["label1": label1, "label2": label2, "label3": label3, "label4": label4, "label5": label5]
         
         for label in viewsDictionary.keys {
             view.addConstraints( NSLayoutConstraint.constraints(withVisualFormat: "H:|[\(label)]|", options: [], metrics: nil, views: viewsDictionary))
         }
         
-        view.addConstraints( NSLayoutConstraint.constraints(withVisualFormat: "V:|[label1]-[label2]-[label3]-[label4]-[label5]", options: [], metrics: nil, views: viewsDictionary))
+        let metrics = ["labelHeight": 88]
+        
+        view.addConstraints( NSLayoutConstraint.constraints(withVisualFormat: "V:|[label1(labelHeight@999)]-[label2(label1)]-[label3(label1)]-[label4(label1)]-[label5(label1)]->=10-|", options: [], metrics: metrics, views: viewsDictionary))
+        
+        // NSLayoutAnchors
+        
+        /*var previous: UILabel!
+        
+        for label in [label1, label2, label3, label4, label5] {
+            label.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+            label.heightAnchor.constraint(equalToConstant: 88).isActive = true
+            
+            if previous != nil {
+                // we have a previous label – create a height constraint
+                label.topAnchor.constraint(equalTo: previous.bottomAnchor).isActive = true
+            }
+            
+            // set the previous label to be the current one, for the next loop iteration
+            previous = label
+        }*/
     }
     
     override var prefersStatusBarHidden: Bool {
