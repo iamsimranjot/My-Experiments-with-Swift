@@ -13,6 +13,7 @@
 		70F52CD520511441000E3FB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70F52CD420511441000E3FB2 /* Assets.xcassets */; };
 		70F52CD820511441000E3FB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70F52CD620511441000E3FB2 /* LaunchScreen.storyboard */; };
 		70F52CE3205141CA000E3FB2 /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 70F52CE2205141CA000E3FB2 /* level1.txt */; };
+		70F52CE520514C85000E3FB2 /* level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 70F52CE420514C85000E3FB2 /* level2.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		70F52CD720511441000E3FB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70F52CD920511441000E3FB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70F52CE2205141CA000E3FB2 /* level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
+		70F52CE420514C85000E3FB2 /* level2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level2.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				70F52CE2205141CA000E3FB2 /* level1.txt */,
+				70F52CE420514C85000E3FB2 /* level2.txt */,
 				70F52CD420511441000E3FB2 /* Assets.xcassets */,
 				70F52CD620511441000E3FB2 /* LaunchScreen.storyboard */,
 			);
@@ -150,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70F52CE520514C85000E3FB2 /* level2.txt in Resources */,
 				70F52CD820511441000E3FB2 /* LaunchScreen.storyboard in Resources */,
 				70F52CE3205141CA000E3FB2 /* level1.txt in Resources */,
 				70F52CD520511441000E3FB2 /* Assets.xcassets in Resources */,
