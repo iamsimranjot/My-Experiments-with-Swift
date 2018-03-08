@@ -12,6 +12,8 @@
 		70F52D012051C653000E3FB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70F52CFF2051C653000E3FB2 /* Main.storyboard */; };
 		70F52D032051C653000E3FB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70F52D022051C653000E3FB2 /* Assets.xcassets */; };
 		70F52D062051C653000E3FB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70F52D042051C653000E3FB2 /* LaunchScreen.storyboard */; };
+		70F52D112051C725000E3FB2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F52D102051C725000E3FB2 /* DetailViewController.swift */; };
+		70F52D142051C764000E3FB2 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F52D132051C763000E3FB2 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		70F52D022051C653000E3FB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70F52D052051C653000E3FB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70F52D072051C653000E3FB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70F52D102051C725000E3FB2 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		70F52D132051C763000E3FB2 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			children = (
 				70F52CFB2051C653000E3FB2 /* AppDelegate.swift */,
 				70F52CFF2051C653000E3FB2 /* Main.storyboard */,
+				70F52D122051C739000E3FB2 /* Helpers */,
 				70F52D0E2051C67D000E3FB2 /* Resources */,
 				70F52D0D2051C672000E3FB2 /* Supporting FIles */,
 				70F52D0F2051C695000E3FB2 /* View Controllers */,
@@ -83,9 +88,18 @@
 		70F52D0F2051C695000E3FB2 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				70F52D102051C725000E3FB2 /* DetailViewController.swift */,
 				70F52CFD2051C653000E3FB2 /* ViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		70F52D122051C739000E3FB2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				70F52D132051C763000E3FB2 /* SwiftyJSON.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,8 +174,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70F52D112051C725000E3FB2 /* DetailViewController.swift in Sources */,
 				70F52CFE2051C653000E3FB2 /* ViewController.swift in Sources */,
 				70F52CFC2051C653000E3FB2 /* AppDelegate.swift in Sources */,
+				70F52D142051C764000E3FB2 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +316,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8MH4723CB5;
-				INFOPLIST_FILE = "Grand Central Dispatch/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Grand Central Dispatch/Supporting FIles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.simranjot.Grand-Central-Dispatch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -315,7 +331,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8MH4723CB5;
-				INFOPLIST_FILE = "Grand Central Dispatch/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Grand Central Dispatch/Supporting FIles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.simranjot.Grand-Central-Dispatch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
