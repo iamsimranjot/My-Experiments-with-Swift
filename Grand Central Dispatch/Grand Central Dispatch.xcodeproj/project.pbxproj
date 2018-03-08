@@ -55,13 +55,37 @@
 			isa = PBXGroup;
 			children = (
 				70F52CFB2051C653000E3FB2 /* AppDelegate.swift */,
-				70F52CFD2051C653000E3FB2 /* ViewController.swift */,
 				70F52CFF2051C653000E3FB2 /* Main.storyboard */,
-				70F52D022051C653000E3FB2 /* Assets.xcassets */,
-				70F52D042051C653000E3FB2 /* LaunchScreen.storyboard */,
-				70F52D072051C653000E3FB2 /* Info.plist */,
+				70F52D0E2051C67D000E3FB2 /* Resources */,
+				70F52D0D2051C672000E3FB2 /* Supporting FIles */,
+				70F52D0F2051C695000E3FB2 /* View Controllers */,
 			);
 			path = "Grand Central Dispatch";
+			sourceTree = "<group>";
+		};
+		70F52D0D2051C672000E3FB2 /* Supporting FIles */ = {
+			isa = PBXGroup;
+			children = (
+				70F52D072051C653000E3FB2 /* Info.plist */,
+			);
+			path = "Supporting FIles";
+			sourceTree = "<group>";
+		};
+		70F52D0E2051C67D000E3FB2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				70F52D022051C653000E3FB2 /* Assets.xcassets */,
+				70F52D042051C653000E3FB2 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		70F52D0F2051C695000E3FB2 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				70F52CFD2051C653000E3FB2 /* ViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
