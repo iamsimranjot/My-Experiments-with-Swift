@@ -15,11 +15,10 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        getPetitions()
+        performSelector(inBackground: #selector(fetchJSON), with: nil)
     }
     
-    func getPetitions() {
-        
+    @objc func fetchJSON() {
         let urlString: String
         
         if navigationController?.tabBarItem.tag == 0 {
@@ -29,18 +28,17 @@ class ViewController: UITableViewController {
         }
         
         if let url = URL(string: urlString) {
-            
             if let data = try? String(contentsOf: url) {
                 let json = JSON(parseJSON: data)
                 
                 if json["metadata"]["responseInfo"]["status"].intValue == 200 {
-                    parse(json: json)
+                    self.parse(json: json)
                     return
                 }
             }
         }
         
-        showError()
+        performSelector(onMainThread: #selector(showError), with: nil, waitUntilDone: false)
     }
     
     func parse(json: JSON) {
@@ -55,10 +53,12 @@ class ViewController: UITableViewController {
             petitions.append(obj)
         }
         
-        tableView.reloadData()
+        DispatchQueue.main.async { [unowned self] in
+            self.tableView.reloadData()
+        }
     }
     
-    func showError() {
+    @objc func showError() {
         let ac = UIAlertController(title: "Loading error", message: "There was a problem loading the feed; please check your connection and try again.", preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "OK", style: .default))
         present(ac, animated: true)
